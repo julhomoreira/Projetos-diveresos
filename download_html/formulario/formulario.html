@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+        Nome:<br>
+        <input type="text" name="nome" required autofocus maxlength="6"> <br>
+        Senha:<br>
+        <input type="password" name="senha" placeholder="******"><br>
+        Email:<br>
+        <input type="email" name="email" autocomplete="on" placeholder="Ex: fulano@exemplo.com" required><br>
+        
+        Arquivo: <br>
+        <input type="file" name="arquivo"><br><br>
+
+        Data: <br>
+        <input type="date" name="data" min="2000-12-31" max="2015-12-31"><br><br>
+
+        Hora: <br>
+         <input type="time" name="hora"><br><br>
+
+         <input type="hidden" name="id"><br><br>
+        
+        Mês e Ano: <br>
+        <input type="month" name="mes-ano"><br><br>
+
+        Semana: <br>
+        <input type="week" name="semana"><br><br>
+
+        Data e hora: <br>
+        <input type="datetime-local" name="data-e-hoa"><br><br>
+
+        Mensagem: <br>
+        <textarea name="mensagem" id="opinião" cols="30" rows="5"></textarea><br>
+        <button type="submit">Clique-me</button><br><br>
+        
+        Escolha seu veículo: <br>
+        <select name="veiculo" id="car">
+            <optgroup label="Carros">
+            <option value="camaro">Camaro</option>
+            <option value="hilux">Hilux</option>
+            </optgroup>
+
+            <optgroup label="Motos">
+            <option value="pop100">Pop100</option>
+            <option value="zig50">Zig50</option>
+            </optgroup>
+        </select><br><br>
+
+        Escolha um curso: <br>
+
+        <input name="cursos" list="lista-cursos">
+
+        <datalist id="lista-cursos">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="PHP"></option>
+        </datalist><br><br>
+
+        URL: <br>
+        <input type="url" name="site"><br><br>
+
+        Search: <br>
+        <input type="search" name="Pesquisa"><br><br>
+
+        Telefone: <br>
+        <input type="tel" name="telefone"><br><br>
+
+
+
+        Time: <br>
+        <input type="radio" name="time" value="Vasco" checked> Vasco <br>
+        <input type="radio" name="time" value="Botafogo"> Botafogo <br>
+        <input type="radio" name="time" value="Fluminense"> Fluminense <br>
+        <input type="radio" name="time" value="Flamengo"> Flamengo <br>
+        <br>
+        
+        Cores:<br>
+        <input type="checkbox" name="cores" value="verde">Verde<br>
+        <input type="checkbox" name="cores" value="Azul" checked>Azul<br>
+        <input type="checkbox" name="cores" value="Preto">Preto<br><br>
+
+        Quantidade: <br>
+        <input type="number" name="quantidade" min="0" max="500" step="10">
+        <br> <br>
+        <input type="range" name="quantidade">
+
+        Cor: <br>
+        <input type="color" name="cor"> <br><br>
+
+        <input type="submit" name="btn-enviar" value="Enviar">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
